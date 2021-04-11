@@ -34,6 +34,11 @@ h4 {
 }
 img {width: 100%;}
 
+.logo-resize {
+  width: 50px;
+  height: auto;
+}
+
 a {
   color: #747474;
   text-decoration: none; /* No underlining */
