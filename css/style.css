@@ -12,6 +12,7 @@ body {
   font-size: 16px; /*Sets the font size to 16px */
   font-weight: 300; /*Set's the font weight to 300 */
   line-height: 1.9; /* Sets the line-height to 1.6 * the font size */
+  color: #676767;
 }
 h1, h2, h3 {
   line-height: 1.3;
@@ -40,11 +41,11 @@ img {width: 100%;}
 }
 
 a {
-  color: #747474;
+  color: #64A3B5;
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link - blue */
-  color: #64A3B5;
+  color: #747474;
 }
 a:hover,
 a:focus {
@@ -57,7 +58,7 @@ a:active { /* selected link - burnt orange */
 
 .button {
   display: inline-block; /* since the <a> tage is inline by default, we need to change this to inline-block */
-  background-color: #747474;
+  background-color: #64A3B5;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -67,7 +68,7 @@ a:active { /* selected link - burnt orange */
 }
 .button:visited {
   color: #ffffff;
-  background-color: #64A3B5;
+  background-color: #747474;
 }
 .button:hover,
 .button:focus {
@@ -80,14 +81,15 @@ a:active { /* selected link - burnt orange */
 
 .button.contact {
   background-color: transparent;
-  color: #747474;
+  color: #64A3B5;
   text-transform: uppercase;
-  border: 2px solid #747474;
+  border: 2px solid #64A3B5;
 }
 .button.contact:hover,
 .button.contact:focus {
   background-color: #747474;
   color: #ffffff;
+  border: 2px solid #747474;
 }
 .button.contact:active {
   background-color: #B07033;
