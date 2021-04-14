@@ -12,9 +12,9 @@ Light Gray: #F0F0F0
 }
 body {
   background-color: #ffffff;
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px; /*Sets the font size to 16px */
-  font-weight: 300; /*Set's the font weight to 300 */
+  font-weight: 400; /*Set's the font weight to 300 */
   line-height: 1.9; /* Sets the line-height to 1.6 * the font size */
   color: #676767;
 }
@@ -148,6 +148,7 @@ header {
   padding: 10px 0; /* adds padding to the top so it's not against screen */
   box-shadow: 0px 1px 9px 0px rgba(50, 50, 50, 0.25);
   position: fixed;
+  width: 100%;
 }
 main {
   padding-top: 150px;
@@ -162,7 +163,7 @@ nav > ul > li {
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   color: #64A3B5;
 }
 nav > ul > li > a:visited {
