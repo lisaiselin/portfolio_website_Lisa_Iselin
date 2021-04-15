@@ -68,10 +68,11 @@ a:active { /* selected link - burnt orange */
   background-color: #64A3B5;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 5px;
   border-radius: 3px;
   border-bottom: 2px solid #747474; /* width of the border, type, color */
-  transistion: 0.2s opacity;
+  transition: 0.3s opacity;
 }
 .button:visited {
   color: #ffffff;
@@ -80,7 +81,6 @@ a:active { /* selected link - burnt orange */
 .button:hover,
 .button:focus {
   opacity: 0.8; /* reduces opacity of button to 80% */
-  text-decoration: none;
 }
 .button:active {
   color: #000000
@@ -91,6 +91,7 @@ a:active { /* selected link - burnt orange */
   color: #64A3B5;
   text-transform: uppercase;
   border: 2px solid #64A3B5;
+  margin: 0 0 20px 0;
 }
 .button.contact:hover,
 .button.contact:focus {
@@ -108,7 +109,7 @@ a:active { /* selected link - burnt orange */
 /* Layout Styling */
 
 .container {
-  padding: 0 15px;
+  padding: 0 25px;
 }
 
 .row {
@@ -126,6 +127,8 @@ a:active { /* selected link - burnt orange */
 .center { /* added this for the "hello" line on about page...because it will always be centered? */
   text-align: center;
 }
+
+
 
 /* this is a second way to center text. Need to add class="center" to <h1> (or other <h> tags) in HTML file
 .center {
@@ -185,7 +188,9 @@ nav { /*this was supposed to keep nav items from being flush with the bottom of 
 
 .contact {
   text-align: center;
+  display: inline-block;
 }
+
 .social > ul {
   list-style-type: none;
   padding: 0;
@@ -195,4 +200,105 @@ nav { /*this was supposed to keep nav items from being flush with the bottom of 
 }
 .social > ul > li > a {
   padding: 0 15px;
+}
+
+
+.profile {
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446,48px);}
+  to {transform: translate(100px,48px);}
+}
+.cloud-back {
+  animation: 24s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+header {
+  text-align: unset; /* left aligns logo and text */
+  padding: 20px 0 13px;
+}
+nav {
+  width: auto; /* ensures nav element doesn't take up full width of screen - is only as wide as it's content */
+  float: right; /* nav floats to right of logo */
+  margin-top: 4px; /* aligns nav with logo */
+}
+main {
+  padding-top: 99px; /* removes white gap btwn header and hero */
+}
+body {
+  font-size: 18px; /* increase font size for larger screens */
+}
+#hero span {
+  display: block; /* change from inline to block - pushes "i'm a ..." text to the second line */
+}
+.col-md-6 {  /* col = columns, md = medium scrn size, 6 = # of grid columns */
+  width: 50%;
+}
+[class*="col-"] {  /*  * acts like a wildcard. When placed together with col-, ensures every class with col- in it will be affected. */
+  float: left;
+  padding: 0 12px;
+}
+.row::after {  /* "clear" the flow to prevent overlapping column items */
+  content: "";
+  clear: both;
+  display: table;
+}
+#about-page h3 { margin-top: 0;} /* reduce space btwn h2 and h3 */
+}
+
+
+/* ==============================
+Large devices (1024px and larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {  /* left column (images) 7 grid columns */
+    width: 58.33%;
+  }
+  .col-lg-5 {   /* right column (header, p, button) 5 grid columns */
+    width: 41.66%;
+  }
+  .container {
+    max-width: 1200px;  /* content won't be wider than 1200 */
+    margin-left: auto;
+    margin-right: auto; /* margin-left and margin-right: auto, together center content*/
+  }
+}
+
+/* ==============================
+X-large devices (1440px and larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
 }

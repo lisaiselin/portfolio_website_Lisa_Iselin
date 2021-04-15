@@ -15,10 +15,8 @@
 <!-- header -->
     <header>
       <div class="container">
-        <nav>
           <a href="index.html">
             <img class="logo" src="img/LI_logo.png" alt="Lisa Iselin Logo"></a>
-      </nav>
 
         <nav>
           <ul>
@@ -40,10 +38,12 @@
 
   <div class="container"><!-- open section block -->
     <div> <!-- open container -->
-      <picture><!-- open image of me -->
-        <source srcset="img/profile/Profile_image_1x.jpg" media="(max-width:767px)">
-        <img src="img/profile/Profile_image_2x.jpg" alt="PERSONAL IMAGE">
-      </picture><!-- end image of me -->
+      <div class="profile">
+        <picture><!-- open image of me -->
+          <source srcset="img/profile/Profile_image_1x.jpg" media="(max-width:767px)">
+            <img src="img/profile/Profile_image_2x.jpg" alt="PERSONAL IMAGE">
+        </picture><!-- end image of me -->
+      </div>
 
       <!-- open my story and skills/tools -->
           <div><!-- open row that holds (2) columns for project -->
@@ -71,7 +71,7 @@ sitting as close as possible to a window with a book.</p>
               <h2>Skills and Tools</h2>
               <div><!-- open row that holds (2) columns Skills (1) Tools (2) -->
 
-                <div><!-- open first column Relevant SKills -->
+                <div class="column col-md-6"><!-- open first column Relevant SKills -->
                   <h3>Relevant Skills</h3>
                   <ul>
                     <li>UI Design &amp; Process</li>
@@ -83,7 +83,7 @@ sitting as close as possible to a window with a book.</p>
                   </ul>
                 </div><!-- end first column Relevant Skills -->
 
-                <div><!-- open second column Tools -->
+                <div class="column col-md-6"><!-- open second column Tools -->
                   <h3>Tools I Use</h3>
                   <ul>
                     <li>Adobe XD, Photoshop, Illustrator, InDesign</li>
@@ -105,8 +105,9 @@ sitting as close as possible to a window with a book.</p>
 
   <!-- footer -->
       <footer class="contact" id="contact">
-      <div class="container"><!-- open Text Area -->
+      <div class="container">
 
+        <div><!-- open Text Area -->
           <h2>Hit me up!</h2>
           <p>Interested in working together? Please get in touch. Call: <a href="tel:303-725-4769">303-725-4769</a> or Skype me at <a href="skype:Lisa Iselin">Lisa Iselin</a>. Prefer sending an email?</p>
         </div><!-- end Text Area -->
