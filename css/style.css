@@ -69,7 +69,7 @@ a:active { /* selected link - burnt orange */
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 3px;
   border-bottom: 2px solid #747474; /* width of the border, type, color */
   transition: 0.3s opacity;
@@ -118,7 +118,24 @@ a:active { /* selected link - burnt orange */
 
 #projects .row {
     padding-bottom: 20px;
-    border-bottom: 1px solid #64A3B5; }
+    border-bottom: 1px solid #64A3B5;
+  }
+
+.details {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #64A3B5;
+  }
+
+.details-top {
+    padding-top: 5px;
+    border-top: 1px solid #64A3B5;
+  }
+
+#return {
+  text-align: center;
+  margin-left: none;
+  margin-righ: none;
+}
 
 #hero h1 {
     text-align: center; /* centers text */
@@ -127,8 +144,6 @@ a:active { /* selected link - burnt orange */
 .center { /* added this for the "hello" line on about page...because it will always be centered? */
   text-align: center;
 }
-
-
 
 /* this is a second way to center text. Need to add class="center" to <h1> (or other <h> tags) in HTML file
 .center {
@@ -186,19 +201,25 @@ nav { /*this was supposed to keep nav items from being flush with the bottom of 
   width: 100%;
 }
 
+#footer .container {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 .contact {
   text-align: center;
   display: inline-block;
 }
 
-.social > ul {
+
+.social > ul {  /* removes bullets??? */
   list-style-type: none;
   padding: 0;
 }
-.social > ul > li {
+.social > ul > li {  /* moves to 1 line??? */
   display: inline;
 }
-.social > ul > li > a {
+.social > ul > li > a {  /* spaces them out??? */
   padding: 0 15px;
 }
 
@@ -265,6 +286,7 @@ body {
 }
 .col-md-6 {  /* col = columns, md = medium scrn size, 6 = # of grid columns */
   width: 50%;
+  margin: 0 0 15px 0;
 }
 [class*="col-"] {  /*  * acts like a wildcard. When placed together with col-, ensures every class with col- in it will be affected. */
   float: left;
@@ -293,6 +315,10 @@ Large devices (1024px and larger)
     max-width: 1200px;  /* content won't be wider than 1200 */
     margin-left: auto;
     margin-right: auto; /* margin-left and margin-right: auto, together center content*/
+  }
+
+  .overview {
+    text-align: center;
   }
 }
 
