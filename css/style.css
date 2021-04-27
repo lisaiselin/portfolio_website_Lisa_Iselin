@@ -43,7 +43,7 @@ img {
 }
 
 .logo {
-  width: 50px;
+  max-width: 50px;
   height: auto;
 }
 
@@ -165,22 +165,20 @@ a:active { /* selected link - burnt orange */
 
 header {
   background-color: #F0F0F0;
-  text-align: center;
-  padding: 10px 0; /* adds padding to the top so it's not against screen */
+  padding: 10px 0 4px; /* adds padding to the top so it's not against screen */
   box-shadow: 0px 1px 9px 0px rgba(50, 50, 50, 0.25);
   position: fixed;
   width: 100%;
 }
 main {
-  padding-top: 150px;
+  padding-top: 80px;
 }
 nav > ul { /* this selects only the ul in the nav (which is only in the header) */
   list-style-type: none; /* removes bullets from nav list */
   padding: 0; /* removes padding so items correctly center */
+  margin: 0;
 }
-nav > ul > li {
-  display: inline-block; /* moves items to one line */
-}
+
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
@@ -190,10 +188,8 @@ nav > ul > li > a {
 nav > ul > li > a:visited {
 /* something should go here but I'm not sure what since it already functions the way I thought it was supposed to */
 }
-nav { /*this was supposed to keep nav items from being flush with the bottom of the nav but mine didn't look like that anyway */
-  display: inline-block;
-  width: 100%
-}
+
+
 #hero {
   background-color: #F0F0F0;
   padding: 20px 10px;
@@ -261,6 +257,35 @@ nav { /*this was supposed to keep nav items from being flush with the bottom of 
 .cloud-back {
   animation: 24s cloud-move-reverse infinite alternate linear;
 }
+.navtoggle li:not(:last-child) {
+  display: none; /* this should hide the nav items on the mobile screen size */
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px; /* this was top: 2px but it was close to the top so i changed it to 15*/
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #64A3B5;
+  text-align: right;
+}
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -297,9 +322,29 @@ body {
   clear: both;
   display: table;
 }
-#about-page h3 { margin-top: 0;} /* reduce space btwn h2 and h3 */
+#about-page h3 { margin-top: 0;
+  } /* reduce space btwn h2 and h3 */
+
+.logo {
+  min-width: 50px;
+  height: auto;
 }
 
+nav > ul > li { /* moving this here allows items to stack on default but be inline here */
+  display: inline-block; /* moves items to one line */
+}
+.navtoggle li:not(:last-child) { /* this shows the nav items that were hidden in the default code */
+  display: inline-block;
+}
+.navtoggle li:last-child { /* this hides the hamb menu on screen sizes larger than mobile*/
+  display: none;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+}
 
 /* ==============================
 Large devices (1024px and larger)
