@@ -339,11 +339,10 @@ nav > ul > li { /* moving this here allows items to stack on default but be inli
 .navtoggle li:last-child { /* this hides the hamb menu on screen sizes larger than mobile*/
   display: none;
 }
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
 
+nav > ul {
+  margin: 1em 0;
+}
 }
 
 /* ==============================
