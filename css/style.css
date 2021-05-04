@@ -182,7 +182,7 @@ nav > ul { /* this selects only the ul in the nav (which is only in the header) 
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
   color: #64A3B5;
 }
 nav > ul > li > a:visited {
