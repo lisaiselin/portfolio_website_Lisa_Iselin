@@ -13,7 +13,7 @@ Light Gray: #F0F0F0
 body {
   background-color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px; /*Sets the font size to 16px */
+  font-size: 14px; /*Sets the font size to 16px */
   font-weight: 400; /*Set's the font weight to 300 */
   line-height: 1.9; /* Sets the line-height to 1.6 * the font size */
   color: #676767;
