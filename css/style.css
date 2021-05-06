@@ -232,7 +232,8 @@ nav > ul > li > a:visited {
   display: inline;
 }
 .social > ul > li > a {  /* spaces them out??? */
-  padding: 0 15px;
+  padding: 0;
+  margin: 5px 2px;
 }
 
 
