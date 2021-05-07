@@ -57,6 +57,7 @@ img {
   max-width: 1200px;
 }
 
+
 .logo {
   max-width: 50px;
   height: auto;
@@ -200,6 +201,7 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 400;
   color: #64A3B5;
+  transition-duration: 0.5s opacity;
 }
 nav > ul > li > a:visited {
 /* something should go here but I'm not sure what since it already functions the way I thought it was supposed to */
@@ -303,6 +305,27 @@ nav > ul > li > a:visited {
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
+#cannyproject img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#greenproject img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#copilotproject img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 
 /* ==============================
 Medium devices (640px and larger)
