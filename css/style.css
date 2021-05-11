@@ -34,6 +34,7 @@ h2 {
   font-weight: 400;
   padding: 25px 0 0 0;
 }
+
 h3 {
   font-family: 'Oswald';
   font-size: 1.75em;
@@ -51,6 +52,7 @@ h4 {
   font-weight: 400:
   color: #64A3B5;
 }
+
 
 h4.home1 {
   color: #ffffff;
@@ -206,6 +208,7 @@ a:active { /* selected link - burnt orange */
 }
 #contact h2 {
   text-align: center;
+  width: 100%;
 }
 #hero p {
   text-align: center;
@@ -226,6 +229,7 @@ nav > ul { /* this selects only the ul in the nav (which is only in the header) 
   padding: 0; /* removes padding so items correctly center */
   margin: 0;
 }
+
 
 nav > ul > li > a {
   padding: 0 15px;
@@ -254,6 +258,7 @@ nav > ul > li > a:visited {
 .contact {
   text-align: center;
   display: inline-block;
+  width: 100%:
 }
 
 
@@ -412,7 +417,7 @@ body {
 }
 [class*="col-"] {  /*  * acts like a wildcard. When placed together with col-, ensures every class with col- in it will be affected. */
   float: left;
-  padding: 0 12px;
+  padding: 0 20px 20px;
 }
 .row::after {  /* "clear" the flow to prevent overlapping column items */
   content: "";
