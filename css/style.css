@@ -26,6 +26,7 @@ h1 {
   font-size: 2.25em;
   font-weight: 400;
   margin: 45px 0 15px 0;
+  color: #64A3B5;
 }
 h2 {
   font-family: 'Oswald';
@@ -40,17 +41,33 @@ h3 {
   margin: 0 10px 0 0;
   padding: 0;
 }
+
+h3.home1 {
+  color: #ffffff;
+}
+
 h4 {
   font-size: .65em;
-  font-weight: 300:
+  font-weight: 400:
   color: #64A3B5;
 }
-p {
-  font-size: .85em;
-  font-weight: 500;
+
+h4.home1 {
+  color: #ffffff;
   margin: 0 0 15px 0;
 }
 
+p {
+  font-size: .95em;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+  line-height: 1.45em;
+}
+p.home1 {
+  color: #ffffff;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
 
 img {
   width: 100%;
@@ -80,16 +97,22 @@ a:active { /* selected link - burnt orange */
   color: #B07033;
 }
 
+.bullets {
+  font-size: .95em;
+}
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
   background-color: #64A3B5;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 100;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 2px 10px;
   border-radius: 3px;
   border-bottom: 0px solid #747474; /* width of the border, type, color */
+  /* border: 1px solid #ffffff; */
   transition: 0.3s opacity;
+  margin: 15px 0 0 0;
 }
 .button:visited {
   color: #ffffff;
@@ -122,6 +145,12 @@ a:active { /* selected link - burnt orange */
   border: 2px solid #B07033;
 }
 
+#prototype {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
 
 /* Layout Styling */
 
@@ -134,8 +163,8 @@ a:active { /* selected link - burnt orange */
 }
 
 #projects .row {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #64A3B5;
+    padding-bottom: 0; /* if you add the rule back, use padding-bottom: 20px; */
+  /*  border-bottom: 1px solid #64A3B5; */
   }
 
 .details {
@@ -146,7 +175,9 @@ a:active { /* selected link - burnt orange */
 .details-top {
     padding-top: 5px;
     border-top: 1px solid #64A3B5;
+    width: 100%;
   }
+
 
 #return {
   text-align: center;
@@ -324,7 +355,25 @@ nav > ul > li > a:visited {
   margin-right: auto;
 }
 
+#project1 {
+  background-color: #919D60;
+  padding: 20px 0 20px 20px;
+}
 
+#project2 {
+  background-color: #EDA61F;
+  padding: 20px 0 20px 20px;
+}
+
+#project3 {
+  background-color: #125695;
+  padding: 20px 0 20px 20px;
+}
+
+#project4 {
+  background-color: #07839D;
+  padding: 20px 0 20px 20px;
+}
 
 
 /* ==============================
@@ -333,7 +382,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
 
 .button {
-  margin: 25px 0;
+  margin: 25px 0 15px;
 }
 h4 {
     margin: 5px 0 25px;
