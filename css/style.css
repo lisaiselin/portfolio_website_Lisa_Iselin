@@ -184,11 +184,6 @@ a:active { /* selected link - burnt orange */
   border-bottom: 1px solid #447e8f;
 }
 
-#details-top {
-  padding-top: 5px;
-  border-top: 1px solid #447e8f;
-}
-
 #return {
   text-align: center;
 }
@@ -206,7 +201,8 @@ a:active { /* selected link - burnt orange */
       text-align: center;
     } */
 
-#about h1 h2 {
+#about h1,
+h2 {
   text-align: center;
 }
 
@@ -214,9 +210,9 @@ a:active { /* selected link - burnt orange */
   text-align: center;
 }
 
-#contact {
-  text-align: center;
-  width: 100%;
+#details-top {
+  padding-top: 5px;
+  border-top: 1px solid #447e8f;
 }
 
 #hero p {
@@ -271,6 +267,12 @@ nav > ul > li > a:visited {
 .contact {
   text-align: center;
   display: inline-block;
+}
+
+#contact {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
 }
 
 .social > ul {  /* removes bullets??? */
@@ -505,4 +507,12 @@ Large devices (1024px and larger)
 /* ==============================
 X-large devices (1440px and larger)
 ================================= */
-@media only screen and (min-width: 1440px)
+@media only screen and (min-width: 1440px) {
+  .col-lg-7 {  /* left column (images) 7 grid columns */
+    width: 58.33%;
+  }
+
+  .col-lg-5 {   /* right column (header, p, button) 5 grid columns */
+    width: 41.66%;
+  }
+}
