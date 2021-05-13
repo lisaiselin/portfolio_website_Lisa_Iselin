@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (Dusty Blue): #64A3B5;
+Primary Color (Dusty Blue): #447e8f;
 Secondary (and active) Color (Burnt Orange): #B07033;
 Text Color (Black): #000000;
 Hyperlink Color (Darkgray): #747474;
@@ -10,29 +10,33 @@ Light Gray: #F0F0F0
 * {
   box-sizing: border-box;
 }
+
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Nunito', sans-serif;
-  font-size: 14px; /*Sets the font size to 16px */
-  font-weight: 400; /*Set's the font weight to 300 */
+  font-size: 14px; /* Sets the font size to 16px */
+  font-weight: 400; /* Set's the font weight to 300 */
   line-height: 1.9; /* Sets the line-height to 1.6 * the font size */
   color: #676767;
 }
-h1, h2, h3 {
+
+h1 h2 h3 {
   line-height: 1.3;
 }
+
 h1 {
   font-family: 'Oswald';
   font-size: 2.25em;
   font-weight: 400;
-  margin: 45px 0 15px 0;
-  color: #64A3B5;
+  margin: 45px 0 15px;
+  color: #447e8f;
 }
+
 h2 {
   font-family: 'Oswald';
   font-size: 1.5em;
   font-weight: 400;
-  padding: 25px 0 0 0;
+  padding: 25px 0 0;
 }
 
 h3 {
@@ -44,28 +48,23 @@ h3 {
 }
 
 h3.home1 {
-  color: #ffffff;
-}
-
-h4 {
-  font-size: .65em;
-  font-weight: 400:
-  color: #64A3B5;
+  color: #fff;
 }
 
 h4.home1 {
-  color: #ffffff;
-  margin: 0 0 15px 0;
+  color: #fff;
+  margin: 0 0 15px;
 }
 
 p {
-  font-size: .95em;
+  font-size: 0.95em;
   font-weight: 500;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
   line-height: 1.45em;
 }
+
 p.home1 {
-  color: #ffffff;
+  color: #fff;
   margin-right: 15px;
   margin-bottom: 5px;
 }
@@ -75,75 +74,86 @@ img {
   max-width: 1200px;
 }
 
-
 .logo {
   max-width: 50px;
   height: auto;
 }
 
 a {
-  color: #64A3B5;
+  color: #447e8f;
   text-decoration: none; /* No underlining */
-  font-size: .85em;
+  font-size: 0.85em;
 }
+
 a:visited { /* visited link - blue */
   color: #747474;
 }
+
 a:hover,
 a:focus {
-  color: #000000;
-/* text-decoration: underline; */ /* Underlining when hovering over link */
+  color: #000;
+
+  /* text-decoration: underline; */
+
+  /* Underlining when hovering over link */
 }
+
 a:active { /* selected link - burnt orange */
-  color: #B07033;
+  color: #b07033;
 }
 
 .bullets {
-  font-size: .95em;
+  font-size: 0.95em;
 }
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
-  background-color: #64A3B5;
-  color: #ffffff; /* needed to override the default link color */
+  background-color: #447e8f;
+  color: #fff; /* needed to override the default link color */
   font-weight: 100;
   text-decoration: none;
-  padding: 2px 10px;
+  padding: 2px 15px;
   border-radius: 3px;
-  border-bottom: 0px solid #747474; /* width of the border, type, color */
+  border-bottom: 0 solid #747474; /* width of the border, type, color */
+
   /* border: 1px solid #ffffff; */
   transition: 0.3s opacity;
-  margin: 15px 0 0 0;
+  margin: 15px 0 0;
 }
+
 .button:visited {
-  color: #ffffff;
+  color: #fff;
   background-color: #747474;
 }
+
 .button:hover,
 .button:focus {
   opacity: 0.8; /* reduces opacity of button to 80% */
 }
+
 .button:active {
-  color: #000000
+  color: #000;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #64A3B5;
+  color: #447e8f;
   text-transform: uppercase;
-  border: 2px solid #64A3B5;
-  margin: 0 0 20px 0;
+  border: 2px solid #447e8f;
+  margin: 0 0 20px;
 }
+
 .button.contact:hover,
 .button.contact:focus {
   background-color: #747474;
-  color: #ffffff;
+  color: #fff;
   border: 2px solid #747474;
 }
+
 .button.contact:active {
-  background-color: #B07033;
-  color: #ffffff;
-  border: 2px solid #B07033;
+  background-color: #b07033;
+  color: #fff;
+  border: 2px solid #b07033;
 }
 
 #prototype {
@@ -160,35 +170,32 @@ a:active { /* selected link - burnt orange */
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right*/
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
 #projects .row {
-    padding-bottom: 0; /* if you add the rule back, use padding-bottom: 20px; */
-  /*  border-bottom: 1px solid #64A3B5; */
-  }
+  padding-bottom: 0; /* if you add the rule back, use padding-bottom: 20px; */
+
+  /* border-bottom: 1px solid #447e8f; */
+}
 
 .details {
-    padding-bottom: 40px;
-    border-bottom: 1px solid #64A3B5;
-  }
+  padding-bottom: 40px;
+  border-bottom: 1px solid #447e8f;
+}
 
-.details-top {
-    padding-top: 5px;
-    border-top: 1px solid #64A3B5;
-    width: 100%;
-  }
-
+#details-top {
+  padding-top: 5px;
+  border-top: 1px solid #447e8f;
+}
 
 #return {
   text-align: center;
-  margin-left: none;
-  margin-righ: none;
 }
 
 #hero h1 {
-    text-align: center; /* centers text */
-    }
+  text-align: center; /* centers text */
+}
 
 .center { /* added this for the "hello" line on about page...because it will always be centered? */
   text-align: center;
@@ -199,51 +206,56 @@ a:active { /* selected link - burnt orange */
       text-align: center;
     } */
 
-#about h1,h2 {
+#about h1 h2 {
   text-align: center;
 }
+
 #projects h2 {
   text-align: center;
 }
-#contact h2 {
+
+#contact {
   text-align: center;
   width: 100%;
 }
+
 #hero p {
   text-align: center;
 }
 
 header {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   padding: 10px 0 4px; /* adds padding to the top so it's not against screen */
-  box-shadow: 0px 1px 9px 0px rgba(50, 50, 50, 0.25);
+  box-shadow: 0 1px 9px 0 rgba(50, 50, 50, 0.25);
   position: fixed;
   width: 100%;
 }
+
 main {
   padding-top: 80px;
 }
+
 nav > ul { /* this selects only the ul in the nav (which is only in the header) */
   list-style-type: none; /* removes bullets from nav list */
   padding: 0; /* removes padding so items correctly center */
   margin: 0;
 }
 
-
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #64A3B5;
-  transition-duration: 0.5s opacity;
-}
-nav > ul > li > a:visited {
-/* something should go here but I'm not sure what since it already functions the way I thought it was supposed to */
+  color: #447e8f;
+  transition-duration: 0.5s;
+  transition-property: opacity;
 }
 
+nav > ul > li > a:visited {
+  /* something should go here but I'm not sure what since it already functions the way I thought it was supposed to */
+}
 
 #hero {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px 10px;
   display: inline-block;
   width: 100%;
@@ -255,25 +267,25 @@ nav > ul > li > a:visited {
   margin-right: auto;
   width: 100%;
 }
+
 .contact {
   text-align: center;
   display: inline-block;
-  width: 100%:
 }
-
 
 .social > ul {  /* removes bullets??? */
   list-style-type: none;
   padding: 0;
 }
+
 .social > ul > li {  /* moves to 1 line??? */
   display: inline;
 }
+
 .social > ul > li > a {  /* spaces them out??? */
   padding: 0;
   margin: 5px 2px;
 }
-
 
 .profile {
   width: 100%;
@@ -289,55 +301,64 @@ nav > ul > li > a:visited {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414}
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
 }
+
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446,48px);}
-  to {transform: translate(100px,48px);}
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
 }
+
 .cloud-back {
   animation: 24s cloud-move-reverse infinite alternate linear;
 }
+
 .navtoggle li:not(:last-child) {
   display: none; /* this should hide the nav items on the mobile screen size */
 }
-.navtoggle, .navtoggle.responsive {
+
+.navtoggle .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
-  right: 0;
-  top: 2px; /* this was top: 2px but it was close to the top so i changed it to 15*/
+  right: 20px;
+  top: 20px; /* this was top: 2px but it was close to the top so i changed it to 15 */
   font-size: 20px;
   padding-right: 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
+
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #64A3B5;
+  border-top: 1px solid #447e8f;
   text-align: right;
 }
+
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
@@ -361,12 +382,12 @@ nav > ul > li > a:visited {
 }
 
 #project1 {
-  background-color: #919D60;
+  background-color: #919d60;
   padding: 20px 0 20px 20px;
 }
 
 #project2 {
-  background-color: #EDA61F;
+  background-color: #eda61f;
   padding: 20px 0 20px 20px;
 }
 
@@ -376,76 +397,86 @@ nav > ul > li > a:visited {
 }
 
 #project4 {
-  background-color: #07839D;
+  background-color: #10303e;
   padding: 20px 0 20px 20px;
 }
-
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  .button {
+    margin: 25px 0 15px;
+  }
 
-.button {
-  margin: 25px 0 15px;
-}
-h4 {
+  h4 {
     margin: 5px 0 25px;
   }
 
-header {
-  text-align: unset; /* left aligns logo and text */
-  padding: 20px 0 13px;
-}
-nav {
-  width: auto; /* ensures nav element doesn't take up full width of screen - is only as wide as it's content */
-  float: right; /* nav floats to right of logo */
-  margin-top: 4px; /* aligns nav with logo */
-}
-main {
-  padding-top: 99px; /* removes white gap btwn header and hero */
-}
-body {
-  font-size: 18px; /* increase font size for larger screens */
-}
-#hero span {
-  display: block; /* change from inline to block - pushes "i'm a ..." text to the second line */
-}
-.col-md-6 {  /* col = columns, md = medium scrn size, 6 = # of grid columns */
-  width: 50%;
-  margin: 0 0 15px 0;
-  display: inline-block;
-}
-[class*="col-"] {  /*  * acts like a wildcard. When placed together with col-, ensures every class with col- in it will be affected. */
-  float: left;
-  padding: 0 25px;
-}
-.row::after {  /* "clear" the flow to prevent overlapping column items */
-  content: "";
-  clear: both;
-  display: table;
-}
-#about-page h3 { margin-top: 0;
+  header {
+    text-align: unset; /* left aligns logo and text */
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto; /* ensures nav element doesn't take up full width of screen - is only as wide as it's content */
+    float: right; /* nav floats to right of logo */
+    margin-top: 4px; /* aligns nav with logo */
+  }
+
+  main {
+    padding-top: 99px; /* removes white gap btwn header and hero */
+  }
+
+  body {
+    font-size: 18px; /* increase font size for larger screens */
+  }
+
+  #hero span {
+    display: block; /* change from inline to block - pushes "i'm a ..." text to the second line */
+  }
+
+  .col-md-6 {  /* col = columns, md = medium scrn size, 6 = # of grid columns */
+    width: 50%;
+    margin: 0 0 15px;
+    display: inline-block;
+  }
+
+  [class*="col-"] {  /*  * acts like a wildcard. When placed together with col-, ensures every class with col- in it will be affected. */
+    float: left;
+    padding: 0 25px;
+  }
+
+  .row::after {  /* "clear" the flow to prevent overlapping column items */
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
   } /* reduce space btwn h2 and h3 */
 
-.logo {
-  min-width: 50px;
-  height: auto;
-}
+  .logo {
+    min-width: 50px;
+    height: auto;
+  }
 
-nav > ul > li { /* moving this here allows items to stack on default but be inline here */
-  display: inline-block; /* moves items to one line */
-}
-.navtoggle li:not(:last-child) { /* this shows the nav items that were hidden in the default code */
-  display: inline-block;
-}
-.navtoggle li:last-child { /* this hides the hamb menu on screen sizes larger than mobile*/
-  display: none;
-}
+  nav > ul > li { /* moving this here allows items to stack on default but be inline here */
+    display: inline-block; /* moves items to one line */
+  }
 
-nav > ul {
-  margin: 1em 0;
-}
+  .navtoggle li:not(:last-child) { /* this shows the nav items that were hidden in the default code */
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child { /* this hides the hamb menu on screen sizes larger than mobile */
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
 }
 
 /* ==============================
@@ -455,13 +486,15 @@ Large devices (1024px and larger)
   .col-lg-7 {  /* left column (images) 7 grid columns */
     width: 58.33%;
   }
+
   .col-lg-5 {   /* right column (header, p, button) 5 grid columns */
     width: 41.66%;
   }
+
   .container {
     max-width: 1200px;  /* content won't be wider than 1200 */
     margin-left: auto;
-    margin-right: auto; /* margin-left and margin-right: auto, together center content*/
+    margin-right: auto; /* margin-left and margin-right: auto, together center content */
   }
 
   .overview {
@@ -472,6 +505,4 @@ Large devices (1024px and larger)
 /* ==============================
 X-large devices (1440px and larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-
-}
+@media only screen and (min-width: 1440px)
