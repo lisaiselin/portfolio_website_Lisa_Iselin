@@ -341,7 +341,7 @@ nav > ul > li > a:visited {
 .navtoggle li .icon {
   position: absolute;
   right: 20px;
-  top: 20px; /* this was top: 2px but it was close to the top so i changed it to 15 */
+  top: 15px; /* this was top: 2px but it was close to the top so i changed it to 15 */
   font-size: 20px;
   padding-right: 0;
 }
