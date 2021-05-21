@@ -42,7 +42,7 @@ h2 {
 h3 {
   font-family: 'Oswald';
   font-size: 1.75em;
-  font-weight: 200;
+  font-weight: 300;
   margin: 0 10px 0 0;
   padding: 0;
 }
@@ -60,7 +60,7 @@ p {
   font-size: 0.95em;
   font-weight: 500;
   margin: 0 0 15px;
-  line-height: 1.45em;
+  line-height: 1.5em;
 }
 
 p.home1 {
