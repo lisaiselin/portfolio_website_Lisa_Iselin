@@ -1,7 +1,7 @@
 /*
 Colors used:
 Primary Color (Dusty Blue): #447e8f;
-Secondary (and active) Color (Burnt Orange): #B07033;
+Secondary (and active) Color (Burnt Orange): #d06b0b;
 Text Color (Black): #000000;
 Hyperlink Color (Darkgray): #747474;
 Light Gray: #F0F0F0
@@ -99,7 +99,7 @@ a:focus {
 }
 
 a:active { /* selected link - burnt orange */
-  color: #b07033;
+  color: #d06b0b;
 }
 
 .bullets {
@@ -151,9 +151,9 @@ a:active { /* selected link - burnt orange */
 }
 
 .button.contact:active {
-  background-color: #b07033;
+  background-color: #d06b0b;
   color: #fff;
-  border: 2px solid #b07033;
+  border: 2px solid #d06b0b;
 }
 
 #prototype {
