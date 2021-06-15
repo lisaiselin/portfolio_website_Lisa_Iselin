@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (Dusty Blue): #447e8f;
+Primary Color (Dusty Blue): #e89a18;
 Secondary (and active) Color (Burnt Orange): #d06b0b;
 Text Color (Black): #000000;
 Hyperlink Color (Darkgray): #747474;
@@ -29,7 +29,7 @@ h1 {
   font-size: 2.25em;
   font-weight: 400;
   margin: 10px 0 15px;
-  color: #447e8f;
+  color: #e89a18;
 }
 
 h2 {
@@ -80,7 +80,7 @@ img {
 }
 
 a {
-  color: #447e8f;
+  color: #e89a18;
   text-decoration: none; /* No underlining */
   font-size: 0.85em;
 }
@@ -108,7 +108,7 @@ a:active { /* selected link - burnt orange */
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
-  background-color: #447e8f;
+  background-color: #e89a18;
   color: #fff; /* needed to override the default link color */
   font-weight: 100;
   text-decoration: none;
@@ -137,9 +137,9 @@ a:active { /* selected link - burnt orange */
 
 .button.contact {
   background-color: transparent;
-  color: #447e8f;
+  color: #e89a18;
   text-transform: uppercase;
-  border: 2px solid #447e8f;
+  border: 2px solid #e89a18;
   margin: 0 0 20px;
 }
 
@@ -176,12 +176,12 @@ a:active { /* selected link - burnt orange */
 #projects .row {
   padding-bottom: 0; /* if you add the rule back, use padding-bottom: 20px; */
 
-  /* border-bottom: 1px solid #447e8f; */
+  /* border-bottom: 1px solid #e89a18; */
 }
 
 .details {
   padding-bottom: 40px;
-  border-bottom: 1px solid #447e8f;
+  border-bottom: 1px solid #e89a18;
 }
 
 #return {
@@ -212,7 +212,7 @@ h2 {
 
 #details-top {
   padding-top: 5px;
-  border-top: 1px solid #447e8f;
+  border-top: 1px solid #e89a18;
 }
 
 #hero p {
@@ -241,7 +241,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #447e8f;
+  color: #e89a18;
   transition-duration: 0.5s;
   transition-property: opacity;
 }
@@ -357,7 +357,7 @@ nav > ul > li > a:visited {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #447e8f;
+  border-top: 1px solid #e89a18;
   text-align: right;
 }
 
